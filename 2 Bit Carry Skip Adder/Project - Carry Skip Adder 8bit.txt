@@ -1,0 +1,16 @@
+Carry Skip Adder ( 8bit ) - My Scaledge Project on FPGA
+--------------------------------------------------
+
+A Carry Skip Adder (CSKA) is an improved type of digital adder that reduces the propagation delay of carries in multi-bit binary addition by allowing the carry to "skip" over certain blocks of bits when no carry propagation is needed. It divides the full adder into blocks, and each block generates a block propagate signal that determines whether the carry can bypass the entire block, thus enhancing speed compared to a ripple carry adder.
+
+Consider an 8-bit Carry Skip Adder divided into two 4-bit blocks:
+
+Block 1 (bits 0–3) and Block 2 (bits 4–7) each compute:
+
+Sum bits using full adders.
+
+Block propagate signal: true if all bits in the block propagate the carry.
+
+If the block propagate of Block 1 is high, and a carry-in exists, the carry can skip directly to Block 2, bypassing internal delays of Block 1.
+
+➡️ Advantage: Faster addition than ripple carry adder, especially in wider bit-width adders, with relatively lower complexity than carry-lookahead adders.
