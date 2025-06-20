@@ -55,9 +55,9 @@ The **Carry Skip Adder** enhances performance by skipping carry propagation thro
 ## 📁 Project Structure
 
 ```
-2-bit-cska-fpga/
-├── cla_top.v
-├── tb_cska.v
+2 Bit Carry Skip Adder/
+├── design.v
+├── testbench.v
 ├── Output Waveforms     
 ├── README.md
 ```
