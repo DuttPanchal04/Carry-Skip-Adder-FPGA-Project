@@ -1,0 +1,72 @@
+$date
+	Fri Jun 20 03:21:00 2025
+$end
+
+$version
+	Synopsys VCS version U-2023.03-SP2_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 f8562baa1eb465c9 $end
+
+
+$scope module tb_cska $end
+$var reg 2 ! A [1:0] $end
+$var reg 2 " B [1:0] $end
+$var reg 1 # Cin $end
+$var wire 2 $ Sum [1:0] $end
+$var wire 1 % Cout $end
+
+$scope task show_result $end
+$upscope $end
+
+
+$scope module dut $end
+$var wire 2 ! A [1:0] $end
+$var wire 2 " B [1:0] $end
+$var wire 1 # Cin $end
+$var wire 2 $ Sum [1:0] $end
+$var wire 1 % Cout $end
+$var wire 1 % carry [1] $end
+$var wire 1 # carry [0] $end
+$var wire 1 & propagate [0:0] $end
+$var wire 2 $ cska_block[0].sum_temp [1:0] $end
+$var wire 1 ' cska_block[0].block_carry $end
+$var wire 1 & cska_block[0].block_p $end
+
+$scope module cska_block[0].cla_inst $end
+$var wire 2 ! A [1:0] $end
+$var wire 2 " B [1:0] $end
+$var wire 1 # Cin $end
+$var wire 2 $ Sum [1:0] $end
+$var wire 1 ' Cout $end
+$var wire 1 & P_block $end
+$var wire 2 ( P [1:0] $end
+$var wire 2 ) G [1:0] $end
+$var wire 2 * C [1:0] $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+1#
+0%
+x'
+x&
+b00 !
+b00 "
+b01 *
+b00 )
+b00 (
+b01 $
+$end
+0'
+0&
